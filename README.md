@@ -6,3 +6,6 @@ Changelog :
 - Removed the visual lines in the background of the menus. This was causing visual issues depending on the size of the selected font.
 - Cover art is now hidden in the quick screen menu. Showing album art in the menu was causing visual glitches when using shortcuts in this menu.
 - Show icons in menus by default
+
+![Alt text](RetroTapeFixed/screenshots/wps.png?raw=true "WPS")
+![Alt text](RetroTapeFixed/screenshots/menu.png?raw=true "MENU")
