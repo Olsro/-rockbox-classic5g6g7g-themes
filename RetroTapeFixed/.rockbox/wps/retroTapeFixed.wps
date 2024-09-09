@@ -1,0 +1,205 @@
+# Theme: retroTape
+# By: Humberto Santana (humbertosantana@hotmail.com)
+# License: Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
+# Original graphics. Layout & general idea based on "phkTape" Theme by Paulo Henrique Kikunaga
+# Special thanks to Wesley Clifford "Yotto" for the refined wheel images
+# If used for other works, as per this license, please include the following Attribution Text: "Modified/Derived from retroTape theme for iPod Video (CC-BY-SA 3.0) by Humberto Santana"
+#
+# Version 3.0
+# Last Update: February 8th, 2010
+# First Version: March 6th, 2010
+#
+# RetroTape improvements by OlsroFR (2024)
+#
+# WPS File
+#
+# TOUCHSCREEN AREAS
+#
+# Menu + Quickscreen
+%T(24,22,39,39,menu)
+%T(24,22,39,39,&quickscreen)
+#
+# Files/DB + Context Menu
+%T(70,25,168,33,browse)
+%T(70,25,168,33,&contextmenu)
+#
+# Playlist
+%T(24,94,214,27,playlist)
+#
+# Shuffle
+%T(28,175,22,65,shuffle)
+#
+# Play/Pause
+%T(61,175,30,65,play)
+#
+# Previous + REW
+%T(102,175,26,65,prev)
+%T(102,175,26,65,&rwd)
+#
+# Next + FFW
+%T(140,175,26,65,next)
+%T(140,175,26,65,&ffwd)
+#
+# Pause/Play + Stop
+%T(180,175,30,65,play)
+%T(180,175,30,65,&stop)
+#
+# Repeat
+%T(218,175,30,65,repmode)
+#
+# Volume Down
+%T(285,175,32,28,voldown)
+%T(285,175,32,28,&voldown)
+#
+# Volume Up
+%T(285,81,32,28,volup)
+%T(285,81,32,28,&volup)
+#
+%wd
+%X(retroTape_bg.bmp)
+#
+#
+%wd
+%X(retroTape_bg.bmp)
+#
+# Font Loading
+%Fl(2,14-Rockbox-Mix.fnt)
+%Fl(3,09-Nedore.fnt,15)
+%Fl(4,14-Nimbus.fnt,2)
+%Fl(5,12-Nimbus.fnt)
+#
+# CASSETTE
+#
+# Album Art Conditionals
+%?C<%Vd(a)|%Vd(n)>
+#
+# Album Art Thumbnail VP
+%Cl(0,0,37,37)
+%Vl(a,25,23,67,37,-)
+%Cd
+#
+# Playing Track Info VP (AA Case)
+#
+%Vl(a,67,20,173,14,2)%Vf(4a3f00)%Vb(f0d202)
+%t(6)%s%al%?ia<%ia|%?d(2)<%d(2)|%(Unknown Artist%)>>;%t(12)%al%?ia<%ia|%?d(2)<%d(2)|%(Unknown Artist%)>>
+%Vl(a,67,34,173,14,2)%Vf(000000)%Vb(f0d202)
+%t(6)%al%?it<%it|%fn>;%t(6)%s%al%?it<%it|%fn>;%t(6)%al%?it<%it|%fn>
+%Vl(a,67,48,173,14,2)%Vf(4a3f00)%Vb(f0d202)
+%t(12)%al%?id<%id|%?d(1)<%d(1)|%(Unknown Album%)>>;%t(6)%s%al%?id<%id|%?d(1)<%d(1)|%(Unknown Album%)>>
+#
+# AA cleaning VP
+%Vl(n,25,23,67,37,-)
+#
+# Playing Track Info VP (no AA Case)
+#
+%Vl(n,24,20,214,14,2)%Vf(4a3f00)%Vb(f0d202)
+%t(6)%s%ac%?ia<%ia|%?d(2)<%d(2)|%(Unknown Artist%)>>;%t(12)%ac%?ia<%ia|%?d(2)<%d(2)|%(Unknown Artist%)>>
+%Vl(n,24,34,214,14,2)%Vf(000000)%Vb(f0d202)
+%t(6)%ac%?it<%it|%fn>;%t(6)%s%ac%?it<%it|%fn>;%t(6)%ac%?it<%it|%fn>
+%Vl(n,24,48,214,14,2)%Vf(4a3f00)%Vb(f0d202)
+%t(12)%ac%?id<%id|%?d(1)<%d(1)|%(Unknown Album%)>>;%t(6)%s%ac%?id<%id|%?d(1)<%d(1)|%(Unknown Album%)>>
+#
+# Wheels and PB VPs
+#
+# Tape
+%xl(t,pb.bmp,0,0,36)
+%V(94,64,37,26,-)
+%?px<|%xd(ta)|%xd(tb)|%xd(tc)|%xd(td)|%xd(te)|%xd(tf)|%xd(tg)|%xd(th)|%xd(ti)|%xd(tj)|%xd(tk)|%xd(tl)|%xd(tm)|%xd(tn)|%xd(to)|%xd(tp)|%xd(tq)|%xd(tr)|%xd(ts)|%xd(tt)|%xd(tu)|%xd(tv)|%xd(tw)|%xd(tx)|%xd(ty)|%xd(tz)|%xd(tA)|%xd(tB)|%xd(tC)|%xd(tD)|%xd(tE)|%xd(tF)|%xd(tG)|%xd(tH)|%xd(tI)|%xd(tJ)>
+#
+%xl(T,pb2.bmp,0,0,38)
+%V(131,64,40,26,-)
+%?px<|%xd(Ta)|%xd(Tb)|%xd(Tc)|%xd(Td)|%xd(Te)|%xd(Tf)|%xd(Tg)|%xd(Th)|%xd(Ti)|%xd(Tj)|%xd(Tk)|%xd(Tl)|%xd(Tm)|%xd(Tn)|%xd(To)|%xd(Tp)|%xd(Tq)|%xd(Tr)|%xd(Ts)|%xd(Tt)|%xd(Tu)|%xd(Tv)|%xd(Tw)|%xd(Tx)|%xd(Ty)|%xd(Tz)|%xd(TA)|%xd(TB)|%xd(TC)|%xd(TD)|%xd(TE)|%xd(TF)|%xd(TG)|%xd(TH)|%xd(TI)|%xd(TJ)|%xd(TK)|%xd(TL)>
+#
+# Left Wheel
+%xl(W,wheel.bmp,0,0,3)
+%V(65,64,28,28,-)
+%?mp<|%t(0.2)%xd(Wa)|%t(0.1)%xd(Wc)|%t(0.1)%xd(Wa)|%t(0.1)%xd(Wc)>;%?mp<|%t(0.2)%xd(Wb)|%t(0.1)%xd(Wc)|%t(0.1)%xd(Wb)|%t(0.1)%xd(Wb)>;%?mp<|%t(0.2)%xd(Wc)|%t(0.1)%xd(Wc)|%t(0.1)%xd(Wc)|%t(0.1)%xd(Wa)>
+#
+# Right Wheel
+%V(174,64,28,28,-)
+%?mp<|%t(0.2)%xd(Wc)|%t(0.1)%xd(Wb)|%t(0.1)%xd(Wc)|%t(0.1)%xd(Wb)>;%?mp<|%t(0.2)%xd(Wa)|%t(0.1)%xd(Wb)|%t(0.1)%xd(Wa)|%t(0.1)%xd(Wa)>;%?mp<|%t(0.2)%xd(Wb)|%t(0.1)%xd(Wb)|%t(0.1)%xd(Wb)|%t(0.1)%xd(Wc)>
+#
+# what the **** is this! :)
+%xl(B,B.bmp,0,0)
+%V(38,70,13,13,-)
+%?C<%?cu<%?fv<|%xd(B)>|%?fv<|%xd(B)>|%?fv<%xd(B)|>|%?fv<|%xd(B)>|%?fv<%xd(B)|>|%?fv<|%xd(B)>|%?fv<%xd(B)|>>|%?cu<%?fv<%xd(B)|>|%?fv<%xd(B)|>|%?fv<|%xd(B)>|%?fv<%xd(B)|>|%?fv<|%xd(B)>|%?fv<%xd(B)|>|%?fv<|%xd(B)>>>
+#
+# Total Time Info
+%V(204,80,37,7,0)%Vf(282200)
+%s%ac%pt
+#
+# Position & Playlist info, codec, year
+%V(24,96,214,12,5)%Vf(282200)
+%ac%s%pp / %pe%?pn< in "%pn"|>
+%V(24,111,214,10,0)%Vf(282200)
+%ac%fc %?fv<~|>%fb kbps%?iy<  /  %iy|>
+#
+# Head Mechanism
+%xl(m,mec_in.bmp,0,0)
+%V(117,166,99,6,-)
+%?mp<%xd(m)||%xd(m)|%xd(m)|%xd(m)>
+#
+#
+# DECK
+#
+# Track Time
+%V(268,13,36,13,5)%Vf(FFFFFF)
+%ar%pc
+#
+# Battery & Charge/Plug
+%xl(b,batt.bmp,0,0,9)
+%V(274,67,33,20,-)
+%?bl<||%xd(ba)|%xd(bb)|%xd(bc)|%xd(bd)|%xd(be)|%xd(bf)|%xd(bg)|%xd(bh)|%xd(bi)|%xd(bi)>
+#
+%xl(c,charge.bmp,0,0,2)
+%V(265,97,10,10,-)
+%t(1)%?bp<%xd(ca)|>;%t(1)%?bp<%?bc<%xd(cb)|%xd(ca)>|>
+#
+# Numerical Battery
+%V(274,98,40,7,3)%Vf(2a2a2a)
+%ar%bl%%
+#
+# Volume
+%xl(V,vol.bmp,0,0,19)
+%V(271,118,41,43,-)
+%?pv<|%xd(Va)|%xd(Vb)|%xd(Vc)|%xd(Vd)|%xd(Ve)|%xd(Vf)|%xd(Vg)|%xd(Vh)|%xd(Vi)|%xd(Vj)|%xd(Vk)|%xd(Vl)|%xd(Vm)|%xd(Vn)|%xd(Vo)|%xd(Vp)|%xd(Vq)|%xd(Vr)|%xd(Vs)>
+#
+# Numerical Volume
+%V(293,162,21,7,3)%Vf(2a2a2a)
+%ar%pv
+#
+# Lock
+%xl(l,lock.bmp,0,0)
+%V(9,175,20,33,-)
+%?mh<%xd(l)|>
+#
+# Shuffle
+%xl(s,shuffle.bmp,0,0)
+%V(32,175,20,33,-)
+%?ps<%xd(s)|>
+#
+# Playing Status
+%xl(p,play.bmp,0,0)
+%xl(P,pause.bmp,113,0)
+%xl(f,ffw.bmp,75,0)
+%xl(r,rew.bmp,37,0)
+%V(60,179,150,37,-)
+%?mp<|%xd(p)|%xd(p)%xd(P)|%xd(f)|%xd(r)>
+#
+# Repeat
+%xl(R,Repeat.bmp,0,0,4)
+%V(218,175,28,33,-)
+%?mm<|%xd(Ra)|%xd(Rb)|%xd(Rc)|%xd(Rd)>
+#
+# Peak Meter
+%V(261,183,51,17,4)%Vf(6699b9)%Vb(72abce)
+%pm
+#
+# Disk Activity
+%xl(h,hdd.bmp,0,0)
+%V(291,210,23,11,-)
+%?lh<%xd(h)|>
+#
+# Next Track Info
+%V(64,226,192,14,2)%Vf(dddddd)
+%t(5)%ac%?It<%It|%?Fn<%Fn|-  End  ->>;%t(5)%s%ac%?It<%It|%?Fn<%Fn|-  End  ->>;%ac%?if(%ia, =, %Ia)<%t(0)|%?Ia<%t(5)by  %Ia|%t(0)>>;%s%ac%?if(%ia, =, %Ia)<%t(0)|%?Ia<%t(5)by  %Ia|%t(0)>>
