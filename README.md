@@ -1,4 +1,4 @@
-# RetroTapeFixed
+# retroTapeFixed
 Modified/Derived from retroTape theme for iPod Video (CC-BY-SA 3.0) by Humberto Santana.
 
 Changelog : 
@@ -7,5 +7,5 @@ Changelog :
 - Cover art is now hidden in the quick screen menu. Showing album art in the menu was causing visual glitches when using shortcuts in this menu.
 - Show icons in menus by default
 
-![Alt text](RetroTapeFixed/screenshots/wps.png?raw=true "WPS")
-![Alt text](RetroTapeFixed/screenshots/menu.png?raw=true "MENU")
+![Alt text](retroTapeFixed/screenshots/wps.png?raw=true "WPS")
+![Alt text](retroTapeFixed/screenshots/menu.png?raw=true "MENU")
