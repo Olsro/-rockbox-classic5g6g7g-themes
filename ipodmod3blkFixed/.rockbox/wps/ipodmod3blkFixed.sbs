@@ -1,0 +1,67 @@
+# Theme:ipodmod3blk
+# Version:1.0
+# Device:ipod video
+# Adapted by: K4sum1
+# License: CC-BY-SA
+# Improved by OlsroFR (2024)
+#
+# SBS File
+#
+
+#-- Status Bar Disabler
+%wd
+#
+#-- Title Bar Disabler
+%?Lt<|>
+#
+#-- Backdrop
+%X(Backdrop - SBS.bmp) 
+#
+#-- PreLoad Fonts
+%Fl(3,18-Cantarell-Bold.fnt)
+%Fl(4,14-Ubuntu-M.fnt)
+#
+#-- Preloaded Images
+%xl(A,battery.bmp,0,0,24)
+%xl(B,Disk Access Icons.bmp,0,0,6)
+%xl(C,Hold Icon - SBS.bmp,0,0)
+%xl(D,Play & Pause Icons3 - SBS.bmp,0,0,2)
+#
+#-- Date Bar
+%V(100,4,120,14,4)%Vf(F4F4F4)%Vb(000000)
+%ac%cb %ce, %?cf<%cH:%cM|%cl:%cM>
+#
+#-- Disk Access/Play & Pause Icons Handler
+#%?lh<%Vd(a)|%Vd(b)>
+#
+#-- Disk Access Icons
+%V(2,3,14,14,-)
+%?lh<%t(0.1)%xd(Ba);%t(0.1)%xd(Bb);%t(0.1)%xd(Bc);%t(0.1)%xd(Bd);%t(0.1)%xd(Be);%t(0.1)%xd(Bf)|>
+#
+#-- Hold Icon (only if there is no disk activity)
+%V(5,5,7,10,-)
+%?and(%if(%mh, =, 1), %if(%lh, =, 0))<%xd(C)|%?mr<%xd(C)>>
+#
+#-- Shuffle
+%xl(K,Shuffle Icon - SBS.bmp,0,0)
+%V(35,4,14,12,1)
+%?ps<%xd(K)>
+#
+%xl(J,Playback Icons - SBS.bmp,0,0,4)
+%V(55,4,14,12,1)
+%?mm<|%xd(Ja)|%xd(Jb)|%xd(Jc)|%xd(Jd)>
+#
+#-- Play & Pause Icons
+%V(230,5,16,17,-)
+%?mp<|%xd(Da)|%xd(Db)||||||>
+#
+#-- Battery Icons
+%V(294,5,19,10,-)
+%?bp<%?bc<%t(1.0)%xd(Aa);%t(1.0)%xd(Ab)|%xd(Ac)>|%?bl<%xd(Ad)|%xd(Ad)|%xd(Ae)|%xd(Af)|%xd(Ag)|%xd(Ah)|%xd(Ai)|%xd(Aj)|%xd(Ak)|%xd(Al)|%xd(Am)|%xd(An)|%xd(Ao)|%xd(Ap)|%xd(Aq)|%xd(Ar)|%xd(As)|%xd(At)|%xd(Au)|%xd(Av)|%xd(Aw)|%xd(Ax)>>
+#
+# Battery text
+%V(257,4,32,14,4)%Vf(F4F4F4)%Vb(000000)
+%ar%bl%%
+#
+#-- UI Viewport
+%Vi(-,0,21,320,219,3)%Vf(F4F4F4)%Vb(000000)
