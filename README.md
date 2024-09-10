@@ -10,7 +10,7 @@ Changelog :
 ![Alt text](retroTapeFixed/screenshots/wps.png?raw=true "WPS")
 ![Alt text](retroTapeFixed/screenshots/menu.png?raw=true "MENU")
 
-#ipodmod3blkFixed
+# ipodmod3blkFixed
 Modified/Derived from iPodMod3Blk Theme theme for iPod Video (CC-BY-SA 3.0) by K4sum1.
 
 Changelog : 
